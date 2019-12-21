@@ -64,12 +64,11 @@ div.active{
   transform: translate(-50%, -50%);
 }
 .msg{
-  margin-top:4%;
-  margin-left:37%;
   font-size:1.2rem;
   font-family: 'Lato', sans-serif;
   color:white;
-  text-align:center;
+  margin: 0 auto;
+  margin-top: 4%;
 }
 
 @keyframes shake {
@@ -87,7 +86,8 @@ div.active{
 @media (max-width: 450px) {
 
 .msg{
-  margin-left:11%;
+  
+  font-size:1rem;	
 }
 
 input{
