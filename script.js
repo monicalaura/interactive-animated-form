@@ -6,18 +6,16 @@ const arrows = document.querySelectorAll('.fa-arrow-down');
 arrows.forEach(arrow =>{
 arrow.addEventListener('click',() =>{
 
-//get the input of the current box
+
 const input = arrow.previousElementSibling;
-//get the parent
 const parent = arrow.parentElement;
-//get the next form that will come up - the parent of the next Sibling
 const nextInput = parent.nextElementSibling;
 
 
 
 //check for validation
-if(input.type === "text" && validateUser(input)){  //if username is valid
-  nextForm(parent,nextInput);  //bring in the next input
+if(input.type === "text" && validateUser(input)){  
+  nextForm(parent,nextInput);  
   msg.innerHTML = '';
 }
 else if (input.type === "email" && validateEmail(input)){
